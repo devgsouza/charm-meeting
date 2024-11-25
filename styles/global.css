@@ -1,0 +1,68 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit--font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-body);
+}
+
+:root {
+  /* Variável Family */
+  --font-family: 'Raleway', sans-serif;
+  /* Variáveis de Weight */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  /* Variáveis de Fontes */
+  --title-lg: var(--fw-bold) 1.75rem/auto var(--font-family);
+  --title-md: var(--fw-bold) 1.5rem/auto var(--font-family);
+  --title-sm: var(--fw-bold) 1.25rem/auto var(--font-family);
+  --subtitle: var(--fw-medium) 1.25rem/200% var(--font-family);
+  --body-lg: var(--fw-bold) 1rem/140% var(--font-family);
+  --body-md: var(--fw-bold) .875rem/140% var(--font-family);
+  --body-sm: var(--fw-bold) .75rem/140% var(--font-family);
+  --body-lg-regular: var(--fw-regular) 1rem/140% var(--font-family);
+  --body-md-regular: var(--fw-regular) .875rem/140% var(--font-family);
+  --body-sm-regular: var(--fw-regular) .75rem/140% var(--font-family);
+  --button: var(--fw-bold) .875rem/auto var(--font-family);
+  --link: var(--fw-medium) .875rem/auto var(--font-family);
+  --tag: var(--fw-bold) .625rem/auto var(--font-family);
+/* Variáveis de Cores */
+  --color-title: #f8fbfb;
+  --color-body: #e2e7e9;
+  --text-label: #bac6c9;
+
+  --blue-light: #358bb9;
+  --blue-dark: #144a72;
+  --text-blue: #73b6d2;
+
+  --pink-light: #9547a5;
+  --pink-dark: #7b298a;
+  --text-pink: #c59dd2;
+}
+
+@media (width <= 80rem) {
+  :root {
+  --title-lg: var(--fw-bold) 1.75rem/auto var(--font-family);
+  --title-md: var(--fw-bold) 1.5rem/auto var(--font-family);
+  --title-sm: var(--fw-bold) 1.25rem/auto var(--font-family);
+  --subtitle: var(--fw-medium) 1.25rem/200% var(--font-family);
+  --body-lg: var(--fw-bold) 1rem/140% var(--font-family);
+  --body-md: var(--fw-bold) .875rem/140% var(--font-family);
+  --body-sm: var(--fw-bold) .75rem/140% var(--font-family);
+  --body-lg-regular: var(--fw-regular) 1rem/140% var(--font-family);
+  --body-md-regular: var(--fw-regular) .875rem/140% var(--font-family);
+  --body-sm-regular: var(--fw-regular) .75rem/140% var(--font-family);
+  --button: var(--fw-bold) .875rem/auto var(--font-family);
+  --link: var(--fw-medium) .875rem/auto var(--font-family);
+  --tag: var(--fw-bold) .625rem/auto var(--font-family);
+  }
+}
