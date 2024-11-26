@@ -12,6 +12,8 @@
 body {
   font-family: var(--font-family);
   color: var(--color-body);
+
+  background: linear-gradient(180deg, #00050A 0%, #00050A 100%);
 }
 
 :root {
@@ -49,20 +51,34 @@ body {
   --text-pink: #c59dd2;
 }
 
+.container {
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  width: 21rem;
+}
+
 @media (width <= 80rem) {
   :root {
-  --title-lg: var(--fw-bold) 1.75rem/auto var(--font-family);
-  --title-md: var(--fw-bold) 1.5rem/auto var(--font-family);
-  --title-sm: var(--fw-bold) 1.25rem/auto var(--font-family);
-  --subtitle: var(--fw-medium) 1.25rem/200% var(--font-family);
-  --body-lg: var(--fw-bold) 1rem/140% var(--font-family);
-  --body-md: var(--fw-bold) .875rem/140% var(--font-family);
-  --body-sm: var(--fw-bold) .75rem/140% var(--font-family);
-  --body-lg-regular: var(--fw-regular) 1rem/140% var(--font-family);
-  --body-md-regular: var(--fw-regular) .875rem/140% var(--font-family);
-  --body-sm-regular: var(--fw-regular) .75rem/140% var(--font-family);
+  --title-lg: var(--fw-bold) 3rem/auto var(--font-family);
+  --title-md: var(--fw-bold) 2.5rem/auto var(--font-family);
+  --title-sm: var(--fw-bold) 2rem/auto var(--font-family);
+  --subtitle: var(--fw-medium) 2rem/200% var(--font-family);
+  --body-lg: var(--fw-bold) 1.25rem/140% var(--font-family);
+  --body-md: var(--fw-bold) 1rem/140% var(--font-family);
+  --body-sm: var(--fw-bold) .875rem/140% var(--font-family);
+  --body-lg-regular: var(--fw-regular) 1.25rem/140% var(--font-family);
+  --body-md-regular: var(--fw-regular) 1rem/140% var(--font-family);
+  --body-sm-regular: var(--fw-regular) .875rem/140% var(--font-family);
   --button: var(--fw-bold) .875rem/auto var(--font-family);
   --link: var(--fw-medium) .875rem/auto var(--font-family);
-  --tag: var(--fw-bold) .625rem/auto var(--font-family);
+  --tag: var(--fw-bold) .825rem/auto var(--font-family);
+  }
+
+  .container {
+    padding-inline: 10rem;
+    width: 70rem;
   }
 }
+
+
+
